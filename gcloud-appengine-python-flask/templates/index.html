@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+
+        <form method="post">
+            <label for="">Ingresa la cadena:</label>
+            <input type="text" id="entrada" name="entrada">
+        </form>
+
+        <!-- Display processed string -->
+        {% if cadenaProcesada %}
+        <h2 style="color: red"> <i>Cadena procesada: {{ cadenaProcesada }}</i> </h2>
+        {% endif %}
+
+        <p><a href="/">Inicio</a></p>
+    </body>
+</html>
